@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Nacionalidade</title>
+</head>
+<body>
+    <h1>Quem és Tu?</h1>
+    Eu sou de: <input type="text" name="pais" id="pais">
+    <input type="button" value="Confirmar" onclick="analise()">
+    <div id="res"></div>
+
+    <script>
+        function analise() {
+            var reg = window.document.getElementById('pais')
+            var res = window.document.getElementById('res')
+            var pai = String(reg.value)
+            res.innerHTML = (`<p>Vivendo em <strong>${pai}</strong></p>`)
+            if (pai === 'Brasil') {     
+                res.innerHTML += (`<p>Você é <strong>Brasileiro!</strong></p>`)
+             }   else {
+                res.innerHTML += (`<p>Você é <strong>Estrangeiro!</strong></p>`)      
+             }
+        }
+    </script>
+    
+</body>
+</html>
