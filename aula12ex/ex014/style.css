@@ -12,9 +12,17 @@ section {
     background: white;
     border-radius: 10px;
     margin: auto;
-    padding: 15px;
+    padding: 10px;
     width: 500px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.403); 
+}
+
+div {
+    text-align: center;
+}
+
+div#foto {
+    margin-bottom: 10px;
 }
 
 footer {
